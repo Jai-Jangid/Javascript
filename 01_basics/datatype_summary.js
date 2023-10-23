@@ -35,3 +35,33 @@ const myfunction = function() {
 console.log(typeof anotherId);
 
 // link to read about return type of datatype:- https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ************************************************************************
+
+// Memory
+
+// Stack(use with primitive) and Heap(use with non primitive) memory
+
+let myyoutubename = "jaijangid"
+
+let anothername = myyoutubename
+anothername = "rockstar"
+
+console.log(myyoutubename);
+console.log(anothername);
+
+let userone = {
+    email: "jai@gmail.com",
+    upi: "jai@ybl"
+}
+
+let usertwo = userone
+
+usertwo.email = "jai@google.com"
+
+// in heap memory we we get a reference ,you can say that we edit in the original value whereas in stack memory we get a copy of the value and we edit that copy value 
+
+console.log(userone.email);
+console.log(usertwo.email);
